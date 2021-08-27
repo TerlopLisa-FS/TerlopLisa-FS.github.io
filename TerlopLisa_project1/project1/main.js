@@ -1,9 +1,12 @@
 //username and password arrays
-var usernameArray = ["lterlop1","jessG1","tjC1","danS1"];
-var passwordArray = ["passcode1","passcode2","passcode3","passcode4"];
+var usersArray = {
+    "lterlop1" : "passcode1",
+    "jessG1" : "passcode2",
+    "tjC1" : "passcode3",
+    "danS1": "passcode4"};
 
-var signInButton = document.getElementById("signInButton").onclick = signIn;
-function signIn()
+var signInButton = document.getElementById("signInButton").onclick = SignIn;
+function SignIn()
 {
     //Ask user for their username and password
      var user = prompt("Username: ");
@@ -16,20 +19,20 @@ function signIn()
      }
 
     //Loop through the usernames and passwords in the arrays
-    for(var i=0; i<usernameArray.Length; i++)
+    for(var i = 0; i < usersArray.length; i++)
     {
         //checking if the username and password matched elements in array
-        if ((user === usernameArray[i]) && (pass === passwordArray[i]))
+        if (user && pass === usersArray[i])
         {
             //feedback message for user
-            document.getElementById("heading2").innerText = "Welcome back to myCollectible";
-            heading2.style.color = "blue";
+            document.getElementById("heading1").innerText = "Welcome back to myCollectible";
+            document.getElementById("heading1").style.color = "blue";;
         }
         else
         {
             //Error message
             document.getElementById("heading2").innerText = "Please try logging in again";
-            heading2.style.color = "red";
+            document.getElementById("heading2").style.color = "red";
         }
 
     }
@@ -55,5 +58,5 @@ function SignUp()
     }
     //Feedback message for user
     document.getElementById("heading2").innerText = "Sign up successful! Welcome to myCollectible";
-    heading2.style.color = "blue";
+    document.getElementById("heading2").style.color = "blue";
 }

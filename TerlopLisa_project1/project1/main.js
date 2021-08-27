@@ -1,52 +1,41 @@
-//Array of users
-const usernames = ["lterlop1","jessG1","tjC1"];
-const passwords = ["passCode1","passCode2","passCode3","passCode4"]
+//username and password arrays
+var usernameArray = ["lterlop1","jessG1","tjC1","danS1"];
+var passwordArray = ["passcode1","passcode2","passcode3","passcode4"];
 
-//Prompt asking user if they have an account or not
-let accountCheck = prompt("Do you already have an account? Yes/No");
-//Check to make sure the user only enters "yes" or "no"
-while(accountCheck != "yes" && accountCheck != "no")
-{
-    //Display error message & prompt user to say if they have an account or not
-    accountCheck = prompt("Please type yes or no only. Do you already have an account? Y/N");
-}
-//need conditional for if the user has an account then SignIn will run, if not SignUp will run
-if(accountCheck == "yes")
-{
-    //Call the sign in function since the user typed in yes
-    SignIn(usernames,passwords);
-}
-else
-{
-    //Variables for the parameters of the SignUp function
-    let user;
-    let password;
-    //Call the SignUp function since the user answered no
-    SignUp(user,password);
-}
-
-function SignIn(username,password)
+var signInButton = document.getElementById("signInButton").onclick = signIn;
+function signIn()
 {
     //Ask user for their username and password
-    let user = prompt("Username: ");
-    let usersPassword = prompt("Password: ");
+     var user = prompt("Username: ");
+     var pass = prompt("Password: ");
+     while(user == "" || pass == "")
+     {
+         alert("Please do not leave blank!");
+         user = prompt("Username: ");
+         pass = prompt("Password: ");
+     }
+
     //Loop through the usernames and passwords in the arrays
-    for(var i=0; i<usernames.Length; i++)
+    for(var i=0; i<usernameArray.Length; i++)
     {
         //checking if the username and password matched elements in array
-        if((username === usernames[i]) &&(password === passwords[i]))
+        if ((user === usernameArray[i]) && (pass === passwordArray[i]))
         {
             //feedback message for user
-            console.log("You have successfully logged in");
+            document.getElementById("heading2").innerText = "Welcome back to myCollectible";
+            heading2.style.color = "blue";
         }
         else
         {
             //Error message
-            console.log("Please try logging in again");
+            document.getElementById("heading2").innerText = "Please try logging in again";
+            heading2.style.color = "red";
         }
+
     }
 
 }
+var signUpButton = document.getElementById("signUpButton").onclick = SignUp;
 function SignUp()
 {
     //Have user type in a username
@@ -65,5 +54,6 @@ function SignUp()
         getPassword = prompt("Please enter a password and do not leave blank. Password: ");
     }
     //Feedback message for user
-    console.log("Username and password created!");
+    document.getElementById("heading2").innerText = "Sign up successful! Welcome to myCollectible";
+    heading2.style.color = "blue";
 }

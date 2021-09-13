@@ -1,0 +1,175 @@
+/* Google Fonts ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+
+/* CSS Reset =========================== */
+body, nav, section, footer, h1, h2, h3, p, a, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration: none;
+	font-weight: normal;
+	color: inherit;
+	box-sizing: border-box;
+}
+
+/* Typography Defaults ================= */
+html{
+    font-size: 62.5%;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    color: #828282;
+    background-color: #ffffff;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+body {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+
+
+}
+
+h1{
+    line-height: 1;
+    font-family: 'Poppins-bold', sans-serif;
+    color: black;
+    font-size: 7rem;
+    margin: 2rem 0 4rem;
+}
+h2{
+    font-size: 4rem;
+    margin: 2rem 0 1rem  0;
+}
+h3{
+    font-size: 2rem;
+    margin: 2rem 0 1rem  0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+/* Default Structure =================== */
+nav, body > section, footer {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
+body > section {
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+/* Header ============================== */
+header {
+    background-color: rgb(246, 246, 246);
+}
+img {
+    min-height: 15rem;
+}
+ header ul li{
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+header p{
+    font-family: 'Poppins-bold', sans-serif;
+    color:black;
+    font-size: 16px;
+}
+/*Search============================== */
+
+#search {
+	color:#828282;
+    
+}
+#search p {
+    display:inline-block;
+    padding: .5rem 1rem;
+    color:#828282;
+}
+#search nav li{
+    display: inline-block;
+    padding: .5rem 1rem;
+    
+}
+/*Categories==========================*/
+#categories h2{
+    background-color:#f2ac3d;
+}
+#categories{
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+
+}
+#categories ul{
+    color:#828282;
+    display: block;
+    
+}
+
+/*Filter===========================*/
+#filter h2{
+    color:black;
+	background-color: rgb(247, 247,247);
+    display: block;
+    font-family: 'Poppins', sans-serif;
+
+}
+#filter ul a{
+    text-align: left;
+}
+
+/*Clothing ================================ */
+#clothing{
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Poppins-bold', sans-serif;
+
+}
+
+/* Main Content ================================ */
+#produce_prices p{
+    color: black;
+    font-size: 2rem;
+}
+#produce_prices h3{
+    font-size: 2rem;
+}
+
+/* Footer ===================================== */
+footer h2{
+    color:white;
+    background-color: #f2ac3d;
+    padding: 0 .5rem .25rem .5rem;
+
+}
+#social img{
+    display: inline-block;
+}
+#moreInfo section:nth-last-of-type(1) h3{
+   color:black;
+}
+#moreInfo section:nth-last-of-type(2) h3{
+    color:black;
+}
+#moreInfo section:nth-last-of-type(3) h3{
+    color:black;
+}
+#moreInfo section:nth-last-of-type(4) h3{
+    color:black;
+}
+#moreInfo section:nth-last-of-type(5) h3{
+    color:black;
+}
+#moreInfo section:nth-last-of-type(6)
+{
+    color:white;
+    background-color: #f2ac3d;
+}

@@ -5,33 +5,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Organic Fresh Mart</title>
-        <link rel="stylesheet" href="organic.css">
+        <link rel="stylesheet" href="css/organic.css">
     </head>
     <body>
         <!--Main heading for the company logo and name-->
         <header>
-            <img src="ImagesForHTMLProject/logo.png" alt="Fresh Mart Logo">
-        <h1>Fresh Mart</h1>
-        <p>Welcome to Our Fresh Mart Store</p>
-        <!--Navigation bar at the top of the page-->
-        <nav>
+            <p>Welcome to Our Fresh Mart Store</p>
+            <!--Navigation bar at the top of the page-->
             <ul>
                 <li><a href="">checkout</a></li>
                 <li><a href="">wishlist</a></li>
                 <li><a href="">my account</a></li>
             </ul>
-        </nav>
+            <img src="images/logo.png" alt="Fresh Mart Logo">
+        <h1>Fresh Mart</h1>
+        <section id="search">
+            <a href="">Search</a>
+            <p>Search Our Catalog</p>
+            <a href="">Email Us</a>
+            <p>info@example.com</p>
+            <a href="">Shopping Cart</a>
+            <p>0 Items</p>
+        </section>
     </header>
-    <!--Section for search, contact and shopping cart using heading elements and paragraphs-->
-    <section id="search">
-        <a href="">Search</a>
-        <p>Search Our Catalog</p>
-        <a href="">Email Us</a>
-        <p>info@example.com</p>
-        <a href="">Shopping Cart</a>
-        <p>0 Items</p>
+        <!--Section for search, contact and shopping cart using heading elements and paragraphs-->
+    <div class="wrapper">
+    <main>
         <!--Navigation with unordered list for other user interaction-->
-        <nav>
             <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Blog</a></li>
@@ -40,10 +40,71 @@
                     <li><a href="">Product</a></li>
                     <li><a href="">View More</a></li>
             </ul>
-        </nav>
+         <!--Section for current sale on clothing with heading and paragraph elements-->
+    <section id="clothing">
+        <img src ="images/discount.jpg" alt="Sale 50 % Off">
+        <h3>Shop Now</h3>
+        <p>
+            Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer! Accessorize with a straw hat and you're ready for summer! Accessorize with a straw hat and you're ready for summer!
+            
+    Faded short sleeves t-shirt with high neckline.
+        </p>
+        </section>
+    <section id="produce_prices">
+
+        <h2>Produce</h2>
+        <img src="images/apple.jpg" alt="apple">
+        <p>$40.00</p>
+      <h3>Apples</h3>
+
+      <img src="images/banana.jpg" alt="banana">
+      <p>$30.00</p>
+        <h3>Bananas</h3>
+
+        <img src="images/beets.jpg" alt="beets">
+        <p>$20.00</p>
+        <h3>Beets</h3>
+
+        <img src="images/broccoli.jpg" alt="broccoli">
+        <p>$35.00</p>
+        <h3>Broccoli</h3>
+
+        <img src="images/chillis.jpg" alt="chillis">
+        <p>$42.00</p>
+        <h3> Organic Chillis</h3>
+
+        <img src="images/grapes.jpg" alt="grapes">
+        <p>$30.00</p>
+        <h3>Grapes</h3>
+
+        <img src="images/kiwi.jpg" alt="kiwi">
+        <p>$25.00</p>
+        <h3>Kiwi</h3>
+
+        <img src="images/lime.jpg" alt="lime">
+        <p>$30.00</p>
+        <h3>Limes</h3>
+
+        <img src="images/redOnion.jpg" alt="red onion">
+        <p>$35.00</p>
+        <h3>Red Onions</h3>
+
+        <img src="images/strawberry.jpg" alt="strawberry">
+        <p>$40.00</p>
+        <h3>Strawberries</h3>
+
+        <img src="images/tomato.jpg" alt="tomato">
+        <p>$20.00</p>
+        <h3>Tomatoes</h3>
+
+        <img src="images/orange.jpg" alt="orange">
+        <p>$30.00</p>
+        <h3>Oranges</h3>
     </section>
-    <!--An aside element for related list & links of main content-->
-    <aside>
+</main>
+</div>
+       <!--An aside element for related list & links of main content and left side of page-->
+       <aside>
         <!--Section for different categories-->
     <section id="categories">
         <h2>Categories</h2>
@@ -88,93 +149,27 @@
             </ul>
     </section>
 </aside>
-    <!--Section for current sale on clothing with heading and paragraph elements-->
-    <section id="clothing">
-        <article>
-        <img src ="ImagesForHTMLProject/discount.jpg" alt="Sale 50 % Off">
-        <h3>Shop Now</h3>
-        <p>
-            Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer! Accessorize with a straw hat and you're ready for summer! Accessorize with a straw hat and you're ready for summer!
-
-    Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer!...
-        </p>
-    </article>
-    </section>
-        <!--Main section of product categories and prices with headings, images and prices-->
-        <main>
-    <section id="produce_prices">
-        <h2>Produce</h2>
-        <img src="ImagesForHTMLProject/apple.jpg" alt="apple">
-        <p>$40.00</p>
-      <h3>Apples</h3>
-      
-      <img src="ImagesForHTMLProject/banana.jpg" alt="banana">
-      <p>$30.00</p>
-        <h3>Bananas</h3>
-        
-        <img src="ImagesForHTMLProject/beets.jpg" alt="beets">
-        <p>$20.00</p>
-        <h3>Beets</h3>
-        
-        <img src="ImagesForHTMLProject/broccoli.jpg" alt="broccoli">
-        <p>$35.00</p>
-        <h3>Broccoli</h3>
-        
-        <img src="ImagesForHTMLProject/chillis.jpg" alt="chillis">
-        <p>$42.00</p>
-        <h3> Organic Chillis</h3>
-        
-        <img src="ImagesForHTMLProject/ginger.jpg" alt="ginger">
-        <p>$25.00</p>
-        <h3>Ginger</h3>
-        
-        <img src="ImagesForHTMLProject/grapes.jpg" alt="grapes">
-        <p>$30.00</p>
-        <h3>Grapes</h3>
-        
-        <img src="ImagesForHTMLProject/kiwi.jpg" alt="kiwi">
-        <p>$25.00</p>
-        <h3>Kiwi</h3>
-        
-        <img src="ImagesForHTMLProject/lime.jpg" alt="lime">
-        <p>$30.00</p>
-        <h3>Limes</h3>
-        
-        <img src="ImagesForHTMLProject/redOnion.jpg" alt="red onion">
-        <p>$35.00</p>
-        <h3>Red Onions</h3>
-        
-        <img src="ImagesForHTMLProject/strawberry.jpg" alt="strawberry">
-        <p>$40.00</p>
-        <h3>Strawberries</h3>
-        
-        <img src="ImagesForHTMLProject/tomato.jpg" alt="tomato">
-        <p>$20.00</p>
-        <h3>Tomatoes</h3>
-        
-        <img src="ImagesForHTMLProject/orange.jpg" alt="orange">
-        <p>$30.00</p>
-        <h3>Oranges</h3>
-        
-    </section>
-</main>
+   
 <!--Footer with sections for more info with lists of social media links, account info, information, products and company info-->
 <footer>
-        <section id="moreInfo">
+        <section id="footerInfo">
             <h2>Fresh Mart</h2>
             <section id="social">
-                <img src="ImagesForHTMLProject/facebook.jpg" alt="facebook">
-                <img src="ImagesForHTMLProject/twitter.jpg" alt="twitter">
-                <img src="ImagesForHTMLProject/pinterest.jpg" alt="pinterest">
-                <img src="ImagesForHTMLProject/instagram.jpg" alt="instagram">
-                <img src="ImagesForHTMLProject/tumblr.jpg" alt="tumblr">
-                <img src="ImagesForHTMLProject/youtube.jpg" alt="youtube">
+              <ul>
+                  <li class="facebook"><a href="">Facebook</a></li>
+                  <li class="twitter"><a href="">Twitter</a></li>
+                  <li class="pinterest"><a href="">Pinterest</a></li>
+                  <li class="instagram"><a href="">Instagram</a></li>
+                  <li class="tumblr"><a href="">Tumblr</a></li>
+                  <li class="youtube"><a href="">Youtube</a></li>
+              </ul>
             </section>
-            <section>
+            <section id="moreInfo">
                 <h3>Join our Mailing List</h3>
             </section>
                 <section>
                     <h3>Your Account</h3>
+                    <nav>
                 <ul>
                     <li><a href="">Personal Info</a></li>
                     <li><a href="">Orders</a></li>
@@ -182,9 +177,11 @@
                     <li><a href="">Addresses</a></li>
                     <li><a href="">My Wishlists</a></li>
                 </ul>
+            </nav>
             </section>
                     <section>
                     <h3>Information</h3>
+                    <nav>
                     <ul>
                     <li><a href="">Specials</a></li>
                     <li><a href="">New Products</a></li>
@@ -192,9 +189,11 @@
                     <li><a href="">Our Stores</a></li>
                     <li><a href="">Contact Us</a></li>
                 </ul>
+            </nav>
             </section>
                 <section>
                     <h3>Product</h3>
+                    <nav>
                     <ul>
                         <li><a href="">Prices Drop</a></li>
                         <li><a href="">New Products</a></li>
@@ -202,9 +201,11 @@
                         <li><a href="">Contact Us</a></li>
                         <li><a href="">Sitemap</a></li>
                 </ul>
+            </nav>
             </section>
                 <section>
                     <h3>Our Company</h3>
+                    <nav>
                     <ul>
                         <li><a href="">Delivery</a></li>
                         <li><a href="">Legal Notice</a></li>
@@ -212,6 +213,7 @@
                         <li><a href="">Secure Payment</a></li>
                         <li><a href="">Contact Us</a></li>
                 </ul>
+                </nav>
             </section>
                 <section id="companyInfo">
                     <h3>Location</h3>
@@ -223,7 +225,6 @@
                         <p>info@example.com</p>
                 </section>
         </section>
-        
             <p>&copy;2021, Fresh Mart Sectioned Shopify Theme Powered by Shopify </p>
         </footer>
     </body>

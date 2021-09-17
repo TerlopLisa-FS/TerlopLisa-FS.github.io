@@ -1,0 +1,274 @@
+/* Google Fonts ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+
+/* CSS Reset =========================== */
+body, main, nav, section, footer, h1, h2, h3, p, a, ul, li, img {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration:none;
+	font-weight: normal;
+	color: inherit;
+	box-sizing:border-box;
+}
+
+/* Typography Defaults ================= */
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font:1.5rem/1.6 'Poppins', sans-serif;
+    color: #828282;
+    background: url("../images/applesBackground.jpg") repeat;
+
+}
+
+h1{
+    line-height: 1;
+    font-weight: bold;
+    color: black;
+    font-size: 7rem;
+    margin: 2rem  4rem;
+    float: left;
+}
+h2{
+    font-size: 4rem;
+    margin: 2rem 0 1rem  0;
+    border: 0.2rem solid green;
+}
+h3{
+    font-size: 2rem;
+    margin: 2rem 0 1rem  0;
+    border: 0.2rem solid #f2ac3d;
+}
+
+p {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+aside {
+    float:left;
+}
+div.wrapper{
+    max-width:94rem;
+    margin: 2rem auto;
+    background:white;
+    float:right;
+
+}
+/* Default Structure =================== */
+header, main, footer {
+    max-width: 150rem;
+    margin: auto;
+    background: #fff;
+    }
+
+/* Header ============================== */
+header {
+    background: rgb(246, 246, 246);
+    overflow:auto; 
+}
+header img {
+    min-height: 15rem;
+    clear: left;
+    float:left;
+
+}
+ header ul li{
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    float:right;
+}
+header p{
+    font-weight:bold;
+    color:black;
+    font-size: 1.5rem;
+    float:left;
+}
+header #search{
+    clear:left;
+    float: right;
+}
+main li{
+    padding: .5rem 1rem;
+    display: inline-block;
+}
+
+/*Search============================== */
+
+#search {
+    overflow: auto;
+	color:#828282;
+}
+#search p {
+    padding: .5rem 1rem;
+    color:#828282;
+}
+#search li {
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color: #828282;
+    float:right;
+    
+}
+
+/*Categories==========================*/
+#categories aside{
+    overflow:auto;
+}
+#categories{
+    margin: 2rem 4rem;  
+}
+#categories h2{
+    background:#f2ac3d;
+    display: block;
+
+}
+
+#categories ul{
+    color:#828282;
+    display: block;
+    font-size: 1.5rem; 
+}
+#categories nav li a:hover {
+    color:#f2ac3d;
+}
+
+/*Filter===========================*/
+ #filter{
+	margin: 2rem 4rem;
+} 
+
+#filter h2{
+    color:black;
+	background-color: rgb(247, 247,247);
+    max-width: calc(100%/2 - 2rem);
+}
+#filter h3{
+    max-width: calc(100%/2 - 2rem);
+    clear:both;
+    float: left;
+}
+#filter ul a{
+    font-size: 1.5rem;
+    max-width: calc(100%/2 - 2rem);
+    clear:both;
+    float:left;
+}
+
+/*Clothing ================================ */
+#clothing{
+    overflow: auto;
+    display: block;
+    margin: 0 4rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+}
+#clothing h3{
+    margin: 2rem 24rem;
+    max-width: 50%;
+    clear:left;
+
+}
+#clothing img{
+    padding: 1rem 4rem;
+    clear:both;
+}
+#clothing p{
+    margin: 2rem 14rem;
+    clear: both;
+}
+
+/* Produce and Prices ================================ */
+#produce_prices{
+    overflow:auto;
+}
+#produce_prices img {
+    background-size: 0.5rem;
+    padding: 1rem;
+}
+#produce_prices p{
+    color: black;
+    font-size: 2rem;
+}
+
+#produce_prices h2{
+    margin: 2rem 4rem;
+}
+#produce_prices h3{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Footer ===================================== */
+#footer{
+    overflow:auto;
+}
+
+footer h2{
+    color:white;
+    background-color: #f2ac3d;
+    padding: 0 .5rem .25rem .5rem;
+    clear:both;
+}
+
+#social ul li a{
+    float: left;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: 2.0rem;
+    padding-left: 2.6rem;
+    
+}
+ nav li a:hover{
+    color:green;
+}
+
+.facebook a{
+    background: url("../images/facebook.png") no-repeat;
+}
+.twitter a{
+    background: url("../images/twitter.png") no-repeat;
+}
+.pinterest a{
+    background: url("../images/pinterest.png") no-repeat;
+}
+.instagram a{
+    background: url("../images/instagram.png") no-repeat;
+}
+.tumblr a{
+    background: url("../images/tumblr.png") no-repeat;
+}
+.youtube a{
+    background: url("../images/youtube.png") no-repeat;
+}
+
+#moreInfo section:nth-last-of-type(1) h3{
+   color:black;
+   float:left;
+}
+#moreInfo section:nth-last-of-type(2) h3{
+    color:black;
+    float:left;
+}
+#moreInfo section:nth-last-of-type(3) h3{
+    color:black;
+    float:left;
+
+}
+#moreInfo section:nth-last-of-type(4) h3{
+    color:black;
+}
+#moreInfo section:nth-last-of-type(5) h3{
+    color:black;
+}
+#moreInfo section:nth-last-of-type(6)
+{
+    color:white;
+    background-color: #f2ac3d;
+}

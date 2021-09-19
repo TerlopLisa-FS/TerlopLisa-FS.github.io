@@ -22,7 +22,8 @@ body {
     font:1.5rem/1.6 'Poppins', sans-serif;
     color: #828282;
     background: url("../images/applesBackground.jpg") repeat;
-
+    max-width: 150rem;
+    margin: auto;
 }
 
 h1{
@@ -36,24 +37,23 @@ h1{
 h2{
     font-size: 4rem;
     margin: 2rem 0 1rem  0;
-    border: 0.2rem solid green;
 }
 h3{
     font-size: 2rem;
     margin: 2rem 0 1rem  0;
-    border: 0.2rem solid #f2ac3d;
 }
 
 p {
     margin-bottom: 1rem;
     padding: 1rem;
+    clear:right;
 }
 aside {
-    float:left;
+    width: 20%;
+    float:right;
 }
 div.wrapper{
-    max-width:94rem;
-    margin: 2rem auto;
+    max-width:80%;
     background:white;
     float:right;
 
@@ -88,6 +88,7 @@ header p{
     float:left;
 }
 header #search{
+    width:50%;
     clear:left;
     float: right;
 }
@@ -102,6 +103,7 @@ main li{
     overflow: auto;
 	color:#828282;
 }
+
 #search p {
     padding: .5rem 1rem;
     color:#828282;
@@ -110,12 +112,12 @@ main li{
     padding: .5rem 1rem;
     font-size: 1.5rem;
     color: #828282;
-    float:right;
-    
+    float: right;
 }
 
 /*Categories==========================*/
 #categories aside{
+    max-width: 25%;
     overflow:auto;
 }
 #categories{
@@ -124,7 +126,6 @@ main li{
 #categories h2{
     background:#f2ac3d;
     display: block;
-
 }
 
 #categories ul{
@@ -139,12 +140,14 @@ main li{
 /*Filter===========================*/
  #filter{
 	margin: 2rem 4rem;
+    overflow: auto;
 } 
 
 #filter h2{
     color:black;
 	background-color: rgb(247, 247,247);
     max-width: calc(100%/2 - 2rem);
+    clear:both;
 }
 #filter h3{
     max-width: calc(100%/2 - 2rem);
@@ -160,7 +163,6 @@ main li{
 
 /*Clothing ================================ */
 #clothing{
-    overflow: auto;
     display: block;
     margin: 0 4rem;
     font-size: 1.5rem;
@@ -187,48 +189,71 @@ main li{
 #produce_prices{
     overflow:auto;
 }
-#produce_prices img {
-    background-size: 0.5rem;
+#produce_prices h2{
+    margin: 2rem 4rem;
     padding: 1rem;
+}
+#produce_prices h3{
+    font-size: 2rem;
+    padding: 1rem;
+}
+#produce_prices img {
+    height: 20rem;
+    width: 20rem;
+    float:left;
 }
 #produce_prices p{
     color: black;
     font-size: 2rem;
+    clear:left;
 }
-
-#produce_prices h2{
-    margin: 2rem 4rem;
+#produce_prices section{
+    width:calc(100%/4);
+    float:left;
 }
-#produce_prices h3{
-    font-size: 2rem;
-    padding-bottom: 2rem;
-}
-
-
-/* Footer ===================================== */
-#footer{
-    overflow:auto;
-}
-
-footer h2{
-    color:white;
-    background-color: #f2ac3d;
-    padding: 0 .5rem .25rem .5rem;
+#produce_prices::after{
+    content:"";
+    display: block;
     clear:both;
 }
 
+/* Footer ===================================== */
+
+#footer{
+    overflow:auto;
+    margin:auto;
+}
+
+#social {
+    color:white;
+    margin-top:25px;
+    width:100%;
+    background:#f2ac3d;
+    float:left;
+}
+#social h2{
+    width:33%;
+    float:left;
+}
+#social p{
+    background:#f2ac3d;
+    color:white;
+    width:25%;
+    padding: 2rem; 
+ clear:left;
+    float:right;
+}
+
 #social ul li a{
-    float: left;
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-size: 2.0rem;
-    padding-left: 2.6rem;
-    
+    width:5%;
+    float:right;
 }
  nav li a:hover{
     color:green;
 }
-
 .facebook a{
     background: url("../images/facebook.png") no-repeat;
 }
@@ -247,28 +272,34 @@ footer h2{
 .youtube a{
     background: url("../images/youtube.png") no-repeat;
 }
-
-#moreInfo section:nth-last-of-type(1) h3{
-   color:black;
-   float:left;
+#moreInfo section{
+    width:calc(100%/5 - 2rem);
+    margin-right: 2rem;
+    float: left;
 }
-#moreInfo section:nth-last-of-type(2) h3{
-    color:black;
-    float:left;
+.visa a{
+    background: url("../images/visa.png") no-repeat;
 }
-#moreInfo section:nth-last-of-type(3) h3{
-    color:black;
-    float:left;
-
+.paypal a{
+    background: url("../images/paypal.png") no-repeat;
 }
-#moreInfo section:nth-last-of-type(4) h3{
-    color:black;
+.masterCard a{
+    background: url("../images/mastercard.png") no-repeat;
 }
-#moreInfo section:nth-last-of-type(5) h3{
-    color:black;
+.discover a{
+    background: url("../images/discover.png") no-repeat;
 }
-#moreInfo section:nth-last-of-type(6)
-{
-    color:white;
-    background-color: #f2ac3d;
+.americanExpress a{
+    background: url("../images/americanExpress.png") no-repeat;
+}
+.googleWallet a{
+    background: url("../images/googleWallet.png") no-repeat;
+}
+#payment ul li a{
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: 3.0rem;
+    width:calc(100%/12);
+    clear:left;
+    float:right;
 }

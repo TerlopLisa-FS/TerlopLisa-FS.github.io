@@ -1,0 +1,389 @@
+/* Google Fonts ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+
+/* CSS Reset =========================== */
+body, main, nav, section, div, label, input, textarea, button, footer, h1, h2, h3, p, a, ul, li, img {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration:none;
+	font-weight: normal;
+	color: inherit;
+	box-sizing:border-box;
+}
+
+/* Typography Defaults ================= */
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font:1.5rem/1.6 'Poppins', sans-serif;
+    color: #828282;
+    background: url("../images/applesBackground.jpg") repeat;
+    max-width: 150rem;
+    margin: auto;
+}
+
+h1{
+    line-height: 1;
+    font-weight: bold;
+    color: black;
+    font-size: 7rem;
+    margin: 2rem  4rem;
+    float: left;
+}
+h2{
+    font-size: 4rem;
+    margin: 2rem 0 1rem  0;
+}
+h3{
+    font-size: 2rem;
+    margin: 2rem 0 1rem  0;
+}
+
+p {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    clear:right;
+}
+aside {
+    clear:left;
+    width: 20%;
+    float:left;
+}
+div.wrapper{
+    clear:both;
+    max-width:80%;
+    background:white;
+    float:right;
+
+}
+
+/* Default Structure =================== */
+header, main, footer {
+    max-width: 150rem;
+    margin: auto;
+    background: #fff;
+    }
+
+/* Header ============================== */
+header {
+    background: rgb(246, 246, 246);
+    overflow:auto; 
+}
+header img {
+    min-height: 15rem;
+    clear: left;
+    float:left;
+
+}
+ header ul {
+    float:right;
+}
+header li{
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    float:left;
+}
+header p{
+    font-weight:bold;
+    color:black;
+    font-size: 1.5rem;
+    float:left;
+}
+header #search{
+    width:50%;
+    float: right;
+}
+main li{
+    padding: .5rem 1rem;
+    display: inline-block;
+}
+#navigation{
+    background:#45702C;
+    color:white;
+    clear:both;
+    float:left;
+}
+main{
+    overflow:auto;
+}
+
+/*Search============================== */
+
+#search {
+	color:#828282;
+}
+
+#search p {
+    padding: .5rem 1rem;
+    color:#828282;
+}
+#search li {
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color: #828282;
+    float: right;
+}
+
+/*Categories==========================*/
+#categories{
+    max-width: 25%;
+    margin:1rem 2rem;
+}
+
+#categories h2{
+    background:#f2ac3d;
+    display: block;
+    float:left;
+}
+
+#categories ul{
+    color:#828282;
+    display: block;
+    font-size: 1.5rem; 
+}
+#categories nav li a:hover {
+    color:#f2ac3d;
+}
+/*Contact=============== */
+div.image{
+    clear:both;
+    width:50%;
+    float:left;
+}
+div.contact{
+    overflow:auto;
+    width:40%;
+    float:right;
+}
+
+div.address{
+    clear:both;
+    margin-left: 4rem;
+    width:calc(50%/2);
+    float:left;
+}
+div.phone{
+    clear:right;
+    width:calc(50%/2);
+    float:right;
+}
+div.contact ul li a{
+    text-indent: -9999px;
+    margin-top: 4rem;
+    background-repeat: no-repeat;
+    background-size: 2.0rem;
+    width:5%;
+    float:right;
+}
+#socialMedia{
+    float:left;
+}
+/*Location============================ */
+#location{
+    clear:both;
+    float:left;
+}
+
+/* Section Containers 
+====================================================================== */
+
+form {
+    max-width: 100rem; 
+    margin: 8rem auto 5rem auto;
+    padding: 3rem;
+    background: #ffffff;
+}
+
+/* Clearfix */
+
+form::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* LABELS
+====================================================================== */
+
+label:not(.error) {
+    display: none;
+}
+
+/* DIVS FOR USER INPUT
+======================================================================*/
+#userInfo{
+    padding: 10%;
+    border:none;
+}
+#userInfo h2{
+    text-align: center;
+}
+#userInfo p{
+    text-align: center;
+}
+
+#userInfo div{
+    width:100%;
+    padding: 1rem ;
+    float: left;
+    margin: 1rem auto;
+}
+#name{
+    padding: 1rem;
+}
+#email{
+    padding:1rem;
+    margin-left: 4rem;
+}
+#phone{
+    padding:1rem;
+    margin-left: 5rem;
+}
+/* Button
+====================================================================== */
+button{
+    margin-left: 35rem;
+    padding: 1rem;
+    background:#f2ac3d;
+    color:white;
+    border:none;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+button:hover{
+    background:#45702C;
+}
+
+
+/* INPUTS
+====================================================================== */
+
+ textarea {
+    width: 100%;
+    padding: 1rem ;
+    background: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid #45702C;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+}
+
+textarea {
+    height: 15rem;
+}
+
+
+/* Footer ===================================== */
+
+#footer{
+    overflow:auto;
+    margin:auto;
+}
+
+#social {
+    color:white;
+    margin-top:25px;
+    width:100%;
+    background:#f2ac3d;
+    clear:both;
+    float:left;
+}
+#social h2{
+    width:33%;
+    float:left;
+}
+#social p{
+    background:#f2ac3d;
+    color:white;
+    width:25%;
+    padding: 2rem; 
+    clear:left;
+    float:right;
+}
+
+#social ul li a{
+    margin-top: 4rem;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: 2.0rem;
+    width:5%;
+    float:right;
+}
+ nav li a:hover{
+    color:green;
+}
+.facebook a{
+    background: url("../images/facebook.png") no-repeat;
+}
+.twitter a{
+    background: url("../images/twitter.png") no-repeat;
+}
+.pinterest a{
+    background: url("../images/pinterest.png") no-repeat;
+}
+.instagram a{
+    background: url("../images/instagram.png") no-repeat;
+}
+.tumblr a{
+    background: url("../images/tumblr.png") no-repeat;
+}
+.youtube a{
+    background: url("../images/youtube.png") no-repeat;
+}
+
+#moreInfo section{
+    overflow:auto;
+    width:calc(100%/5 - 2rem);
+    margin-right: 2rem;
+    float: left;
+}
+#companyInfo{
+    background: #f6f6f6;
+}
+#companyInfo img{
+    margin-top: 2rem;
+    width:calc(100%/3 - 6rem);
+    float:left;
+}
+#companyInfo p{
+    clear:both;
+}
+.visa a{
+    background: url("../images/visa.png") no-repeat;
+}
+.paypal a{
+    background: url("../images/paypal.png") no-repeat;
+}
+.masterCard a{
+    background: url("../images/mastercard.png") no-repeat;
+}
+.discover a{
+    background: url("../images/discover.png") no-repeat;
+}
+.americanExpress a{
+    background: url("../images/americanExpress.png") no-repeat;
+}
+.googleWallet a{
+    background: url("../images/googleWallet.png") no-repeat;
+}
+#payment ul li a{
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: 3.0rem;
+    width:calc(100%/12);
+    clear:left;
+    float:right;
+}
